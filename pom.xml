@@ -33,7 +33,7 @@
                 <directory>/</directory>
                 <filtering>false</filtering>
                 <includes>
-                    <include>LICENSE.txt</include>
+                    <include>LICENSE</include>
                 </includes>
             </resource>
         </resources>
