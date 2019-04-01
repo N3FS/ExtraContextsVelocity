@@ -1,6 +1,7 @@
 package uk.co.n3fs.mc.velocitycontexts;
 
 import com.google.inject.Inject;
+import com.velocitypowered.api.event.Subscribe;
 import com.velocitypowered.api.event.proxy.ProxyInitializeEvent;
 import com.velocitypowered.api.plugin.Dependency;
 import com.velocitypowered.api.plugin.Plugin;
@@ -32,6 +33,7 @@ public class ExtraContextsPlugin {
 
     private LuckPermsApi lpApi;
 
+    @Subscribe
     public void onProxyInit(ProxyInitializeEvent event) {
         Optional<LuckPermsApi> lpOpt = LuckPerms.getApiSafe();
         if (!lpOpt.isPresent()) {
